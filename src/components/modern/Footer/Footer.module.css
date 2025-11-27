@@ -1,0 +1,93 @@
+.footer {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.column h3,
+.column h4 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.brand {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.links,
+.contact {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: all var(--transition-base);
+}
+
+.links a:hover {
+    opacity: 1;
+    padding-left: 0.5rem;
+}
+
+.contact li {
+    opacity: 0.9;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity var(--transition-base);
+}
+
+.social a:hover {
+    opacity: 1;
+}
+
+.bottom {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 3rem 0 1.5rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
